@@ -1,0 +1,94 @@
+<mxfile host="app.diagrams.net" modified="2023-04-22T17:58:48.694Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="us8h3OX3_NP6oOPjTL9a" version="21.2.1" type="device">
+  <diagram id="3FDWLT0djYU6GR8Eu86t" name="Page-1">
+    <mxGraphModel dx="954" dy="623" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="9o_ziTd5X3x7VRUj54PJ-1" value="Load the Dataframe" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="60" y="260" width="120" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="9o_ziTd5X3x7VRUj54PJ-3" value="Split the data into training and testing" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="400" y="260" width="120" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="9o_ziTd5X3x7VRUj54PJ-4" value="Standarize the data" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="230" y="260" width="120" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="9o_ziTd5X3x7VRUj54PJ-5" value="Find the best parameters from the dictionary using&amp;nbsp;&lt;font style=&quot;font-size: 12px;&quot;&gt;GridSearchCV object&amp;nbsp;&lt;code style=&quot;background-color: var(--code-cell-background); border-radius: 2px; padding: 0px 3px; color: rgb(33, 33, 33); text-align: start;&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;logreg_cv = 10&lt;/font&gt;&lt;/code&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="570" y="260" width="120" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="9o_ziTd5X3x7VRUj54PJ-6" value="Use GridSearchCV on LogReg, SVM, Decision Tree, and KNN models" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="740" y="260" width="120" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="9o_ziTd5X3x7VRUj54PJ-7" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="9o_ziTd5X3x7VRUj54PJ-4" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="180" y="304.5" as="sourcePoint" />
+            <mxPoint x="260" y="304.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9o_ziTd5X3x7VRUj54PJ-8" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="350" y="304.5" as="sourcePoint" />
+            <mxPoint x="400" y="305" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9o_ziTd5X3x7VRUj54PJ-9" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="520" y="304.5" as="sourcePoint" />
+            <mxPoint x="570" y="305" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9o_ziTd5X3x7VRUj54PJ-10" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="690" y="304.5" as="sourcePoint" />
+            <mxPoint x="740" y="305" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OK4tyIAkzl-4h5hgcCtc-1" value="Use GridSearchCV on LogReg, SVM, Decision Tree, and KNN models" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="740" y="400" width="120" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="OK4tyIAkzl-4h5hgcCtc-2" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="9o_ziTd5X3x7VRUj54PJ-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="800" y="410" as="sourcePoint" />
+            <mxPoint x="800" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OK4tyIAkzl-4h5hgcCtc-3" value="Display the best parameters and the accuracy on the validation data for each model" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="400" width="120" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="OK4tyIAkzl-4h5hgcCtc-4" value="Calculate the accuracy on the test data using the method score for each model" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="400" width="120" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="OK4tyIAkzl-4h5hgcCtc-5" value="Plot the confusion matrix for each model" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="400" width="120" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="OK4tyIAkzl-4h5hgcCtc-6" value="Find the method performs best." style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="400" width="120" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="OK4tyIAkzl-4h5hgcCtc-7" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="OK4tyIAkzl-4h5hgcCtc-1" target="OK4tyIAkzl-4h5hgcCtc-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="700" y="380" as="sourcePoint" />
+            <mxPoint x="750" y="380.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OK4tyIAkzl-4h5hgcCtc-8" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="570" y="444.5" as="sourcePoint" />
+            <mxPoint x="520" y="444.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OK4tyIAkzl-4h5hgcCtc-9" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="444.5" as="sourcePoint" />
+            <mxPoint x="350" y="444.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OK4tyIAkzl-4h5hgcCtc-10" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="230" y="444.5" as="sourcePoint" />
+            <mxPoint x="180" y="444.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
